@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/my_primary"
+    android:padding="30dp">
+
+    <TextView
+        android:id="@+id/textViewUpgrade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Upgrade"
+        android:layout_marginBottom="-10dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="15dp"
+        android:textColor="#070707"
+        android:textSize="40sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/textViewYourExperience"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="your experience"
+        android:layout_marginStart="6dp"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@id/textViewUpgrade"
+        android:textColor="#070707"
+        android:textSize="30sp"
+        android:textStyle="bold"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewStarter"
+        android:layout_below="@id/textViewYourExperience"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        app:cardBackgroundColor="#146FD3"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="4dp">
+
+
+        <!-- Content inside CardView -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/textViewStarter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Starter"
+                android:textColor="#FFFFFF"
+                android:textSize="25sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/textViewImprovedQuizGeneration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="38dp"
+                android:layout_marginEnd="40dp"
+                android:text="Improved Quiz Generation"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/cardViewPurchaseButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="95dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:padding="8dp"
+                android:background="@color/my_secondary"
+                android:text="Purchase"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:textSize="26sp" />
+
+        </FrameLayout>
+    </androidx.cardview.widget.CardView>
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cardViewStarter"
+        android:layout_centerHorizontal="true" />
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewIntermediate"
+        android:layout_below="@id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        app:cardBackgroundColor="#146FD3"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="4dp">
+
+
+        <!-- Content inside CardView -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/textViewIntermediate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Intermediate"
+                android:textColor="#FFFFFF"
+                android:textSize="25sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/textViewImprovedQuizGeneration2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="38dp"
+                android:layout_marginEnd="40dp"
+                android:text="Improved Quiz Generation"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/cardViewPurchaseButton2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewImprovedQuizGeneration2"
+                android:layout_marginTop="95dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:padding="8dp"
+                android:background="@color/my_secondary"
+                android:text="Purchase"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:textSize="26sp" />
+
+        </FrameLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewAdvanced"
+        android:layout_below="@id/cardViewIntermediate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        app:cardBackgroundColor="#146FD3"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="4dp">
+
+
+        <!-- Content inside CardView -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/textViewAdvanced"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Advanced"
+                android:textColor="#FFFFFF"
+                android:textSize="25sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/textViewImprovedQuizGeneration3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="38dp"
+                android:layout_marginEnd="40dp"
+                android:text="Improved Quiz Generation"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/cardViewPurchaseButton3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewImprovedQuizGeneration3"
+                android:layout_marginTop="95dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:padding="8dp"
+                android:background="@color/my_secondary"
+                android:text="Purchase"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:textSize="26sp" />
+
+        </FrameLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

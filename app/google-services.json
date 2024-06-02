@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "670006631296",
+    "project_id": "personalearn-c84b9",
+    "storage_bucket": "personalearn-c84b9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:670006631296:android:b514c36bfee638bc05ff65",
+        "android_client_info": {
+          "package_name": "com.example.personalearn"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAA6IfZqUZ2ODUZFw2Pf5i-HiX7UmPgj3E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/my_primary"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="60dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/hello"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Hello,"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:fontFamily="sans-serif-condensed"
+                    android:layout_marginLeft="20dp" />
+                <TextView
+                    android:id="@+id/text_view_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Hasindu"
+                    android:fontFamily="sans-serif-condensed"
+                    android:textSize="28sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_below="@+id/hello"
+                    android:layout_marginTop="7dp"
+                    android:layout_marginLeft="20dp" />
+                <ImageView
+                    android:id="@+id/userImage"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/hello"
+                    android:layout_marginLeft="230dp"
+                    android:src="@drawable/userphoto"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="10dp"
+                android:padding="10dp">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/baseline_notifications_24"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="No Notifications"
+                    android:textColor="@color/black"
+                    android:fontFamily="sans-serif-condensed"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="30dp" />
+            </RelativeLayout>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="40dp"
+                android:backgroundTint="@color/accent"
+                app:cardCornerRadius="30dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Generated Task 1"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:layout_margin="10dp"
+                        android:textSize="18sp"/>
+                    <TextView
+                        android:id="@+id/smallTask"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:layout_margin="10dp"
+                        android:textColor="@color/black"
+                        android:text="Music"/>
+                    <Button
+                        android:id="@+id/main_start"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Start"
+                        android:backgroundTint="@color/my_secondary"
+                        android:textColor="@color/black"
+                        android:layout_margin="10dp"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:layout_marginBottom="8dp">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="160dp"
+                    android:layout_weight="1"
+                    app:cardBackgroundColor="#146FD3"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="4dp"
+                    android:layout_marginEnd="4dp">
+
+                    <TextView
+                        android:id="@+id/textViewTotalQuestions"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Total Questions\n\n10"
+                        android:gravity="center"
+                        android:textColor="#FFFFFF"
+                        android:textSize="21sp"
+                        android:textStyle="bold"/>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="160dp"
+                    android:layout_weight="1"
+                    app:cardBackgroundColor="#146FD3"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="4dp"
+                    android:layout_marginStart="4dp">
+
+                    <TextView
+                        android:id="@+id/textViewCorrectlyAnswered"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Correctly Answered\n\n7"
+                        android:gravity="center"
+                        android:textColor="#FFFFFF"
+                        android:textSize="21sp"
+                        android:textStyle="bold"/>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Upgrade"
+                android:backgroundTint="@color/my_secondary"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:id="@+id/main_upgrade"
+                android:layout_margin="10dp"/>
+            <Button
+                android:id="@+id/shareButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Share"
+                android:layout_alignParentBottom="true"
+                android:backgroundTint="@color/my_secondary"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:layout_margin="8dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
